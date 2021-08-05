@@ -286,6 +286,7 @@ Parameters:
 ============================================================================
 
 (.venv) root@oshvm:~/wp_mysql# cdk deploy
+
 [Warning at /WpMysqlStack/myASG] desiredCapacity has been configured. Be aware this will reset the size of your AutoScalingGroup on every deployment. See https://github.com/aws/aws-cdk/issues/5215
 This deployment will make potentially sensitive changes according to your current security approval level (--require-approval broadening).
 Please confirm you intend to make the following modifications:
