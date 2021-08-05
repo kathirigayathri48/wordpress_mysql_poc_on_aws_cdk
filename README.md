@@ -1,7 +1,9 @@
 # wordpress_mysql_poc_on_aws_cdk
 
 (.venv) root@oshvm:~/wp_mysql# cdk synth
+
 [Warning at /WpMysqlStack/myASG] desiredCapacity has been configured. Be aware this will reset the size of your AutoScalingGroup on every deployment. See https://github.com/aws/aws-cdk/issues/5215
+
 Resources:
   myrdssg5EE3ADCC:
     Type: AWS::EC2::SecurityGroup
