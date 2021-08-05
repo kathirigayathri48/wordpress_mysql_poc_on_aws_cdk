@@ -333,6 +333,7 @@ WpMysqlStack
 
 ************************
 (.venv) root@oshvm:~/wp_mysql# cdk destroy
+
 Are you sure you want to delete: WpMysqlStack (y/n)? y
 WpMysqlStack: destroying...
 
