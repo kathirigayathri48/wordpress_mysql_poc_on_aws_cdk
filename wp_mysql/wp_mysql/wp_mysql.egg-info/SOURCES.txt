@@ -1,0 +1,6 @@
+README.md
+wp_mysql/wp_mysql.egg-info/PKG-INFO
+wp_mysql/wp_mysql.egg-info/SOURCES.txt
+wp_mysql/wp_mysql.egg-info/dependency_links.txt
+wp_mysql/wp_mysql.egg-info/requires.txt
+wp_mysql/wp_mysql.egg-info/top_level.txt

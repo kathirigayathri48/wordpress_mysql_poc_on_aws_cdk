@@ -1,0 +1,383 @@
+{
+  "version": "12.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "WpMysqlStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://504357410036/ap-south-1",
+      "properties": {
+        "templateFile": "WpMysqlStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/WpMysqlStack/my_rds_sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myrdssg5EE3ADCC",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:215:30)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/my_sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mysg143CED9A",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:215:30)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myEC2/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myEC2InstanceRole116EFD8E",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Instance (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/instance.js:46:35)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myEC2/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myEC2InstanceProfile2D3B3519",
+            "trace": [
+              "new Instance (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/instance.js:50:28)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myEC2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myEC27742CD16",
+            "trace": [
+              "new Instance (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/instance.js:85:25)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ssm/lib/parameter.js:134:15)",
+              "Function.valueForTypedStringParameter (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ssm/lib/parameter.js:208:21)",
+              "AmazonLinuxImage.getImage (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/machine-image.js:127:41)",
+              "new Instance (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/instance.js:54:48)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myALB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myALB18A49813",
+            "trace": [
+              "new BaseLoadBalancer (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:35:26)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:28:9)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myALB/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myALBSecurityGroupF245F258",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:215:30)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:34:56)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myALB/SecurityGroup/to WpMysqlStackmyASGInstanceSecurityGroup4CB365FC:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myALBSecurityGrouptoWpMysqlStackmyASGInstanceSecurityGroup4CB365FC807EA48197",
+            "trace": [
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:72:13)",
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:347:19)",
+              "/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:81:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:80:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowTo (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:79:30)",
+              "Connections.allowFrom (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:112:31)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:107",
+              "Kernel._ensureSync (/tmp/tmpcellg93w/lib/program.js:8563:28)",
+              "Kernel.invoke (/tmp/tmpcellg93w/lib/program.js:7970:34)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myALB/my80/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myALBmy80B990410C",
+            "trace": [
+              "new BaseListener (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:21:26)",
+              "new ApplicationListener (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:32:9)",
+              "ApplicationLoadBalancer.addListener (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:74:26)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:107",
+              "Kernel._ensureSync (/tmp/tmpcellg93w/lib/program.js:8563:28)",
+              "Kernel.invoke (/tmp/tmpcellg93w/lib/program.js:7970:34)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myALB/my80/addTargetGroupGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myALBmy80addTargetGroupGroup1569733D",
+            "trace": [
+              "new TargetGroupBase (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:44:25)",
+              "new ApplicationTargetGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:26:9)",
+              "ApplicationListener.addTargets (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:228:23)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:107",
+              "Kernel._ensureSync (/tmp/tmpcellg93w/lib/program.js:8563:28)",
+              "Kernel.invoke (/tmp/tmpcellg93w/lib/program.js:7970:34)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myASG": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "desiredCapacity has been configured. Be aware this will reset the size of your AutoScalingGroup on every deployment. See https://github.com/aws/aws-cdk/issues/5215",
+            "trace": [
+              "Annotations.addMessage (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/annotations.js:94:42)",
+              "Annotations.addWarning (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/annotations.js:37:14)",
+              "new AutoScalingGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:476:41)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myASG/InstanceSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASGInstanceSecurityGroup77B88BA5",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:215:30)",
+              "new AutoScalingGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:413:53)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myASG/InstanceSecurityGroup/from WpMysqlStackmyALBSecurityGroup6E44C1F7:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASGInstanceSecurityGroupfromWpMysqlStackmyALBSecurityGroup6E44C1F780CB1FF16B",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:57:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:307:19)",
+              "/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:106:31",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:105:51",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:226:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-ec2/lib/connections.js:104:30)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:107",
+              "Kernel._ensureSync (/tmp/tmpcellg93w/lib/program.js:8563:28)",
+              "Kernel.invoke (/tmp/tmpcellg93w/lib/program.js:7970:34)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myASG/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASGInstanceRole5AF7F92F",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new AutoScalingGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:420:35)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myASG/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASGInstanceProfile053766AB",
+            "trace": [
+              "new AutoScalingGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:428:28)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myASG/LaunchConfig": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASGLaunchConfigA0CD8C73",
+            "trace": [
+              "new AutoScalingGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:436:30)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/myASG/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myASG6C9F5AC0",
+            "trace": [
+              "new AutoScalingGroup (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.js:521:33)",
+              "/tmp/tmpcellg93w/lib/program.js:8154:58",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "Kernel._create (/tmp/tmpcellg93w/lib/program.js:8154:34)",
+              "Kernel.create (/tmp/tmpcellg93w/lib/program.js:7895:29)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/WpMysqlStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-mjhsTW/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:134",
+              "Kernel._wrapSandboxCode (/tmp/tmpcellg93w/lib/program.js:8582:24)",
+              "/tmp/tmpcellg93w/lib/program.js:7970:107",
+              "Kernel._ensureSync (/tmp/tmpcellg93w/lib/program.js:8563:28)",
+              "Kernel.invoke (/tmp/tmpcellg93w/lib/program.js:7970:34)",
+              "KernelHost.processRequest (/tmp/tmpcellg93w/lib/program.js:9479:36)",
+              "KernelHost.run (/tmp/tmpcellg93w/lib/program.js:9442:22)",
+              "Immediate._onImmediate (/tmp/tmpcellg93w/lib/program.js:9443:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "WpMysqlStack"
+    }
+  }
+}
