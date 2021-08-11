@@ -65,6 +65,7 @@ class WpMysqlStack(cdk.Stack):
             deletion_protection=False
         ),
         '''
+        # Create ec2 instance
         host = ec2.Instance(self, "myEC2",
                             security_group=wp_security_group,
                             instance_type=ec2.InstanceType(
